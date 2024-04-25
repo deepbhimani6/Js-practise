@@ -1,0 +1,36 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Quiz.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quiz.js</h1>
+        <p>Do you know JS? Find out!</p>
+        <div id="score">
+            Score: <span id="correctScore">0</span> / <span id="totalQuestion"></span>
+        </div>
+    </header>
+
+    <main>
+        <div id="question"></div>
+
+        <div id="options">
+            <button id="trueBtn" name="true" value="true">true</button>
+            <button id="falseBtn" name="false" value="false">false</button>
+        </div>
+
+        <div id="reason" class="hidden"></div>
+
+        <button id="nextQuestion" name="next-question" disabled="false">Next Question</button>
+
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

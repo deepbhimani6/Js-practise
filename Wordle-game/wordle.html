@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game-wrapper">
+        <a href="https://wordlegame.org/" target="_blank">Game Link</a>
+        <div class="game_rows">
+            <div class="row">
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+            </div>
+            <div class="row">
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+            </div>
+            <div class="row">
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+            </div>
+            <div class="row">
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+            </div>
+            <div class="row">
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+            </div>
+            <div class="row">
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+                <div class="row-letter"></div>
+            </div>
+        </div>
+
+        <!-- <div class="message" style="display: none;">Challenge Mode</div>
+        <div class="message" style="display: none;">Daily Mode</div> -->
+        <div class="message" style="display: none;"><b>You Won! 🏆</b></div>
+        <div class="message" style="display: none;"><b>You Lost!</b></div>
+
+        <div class="keyboard">
+            <div class="keyboard-row">
+                <div class="keyboard-btn keyboard-btn-letter">q</div>
+                <div class="keyboard-btn keyboard-btn-letter">w</div>
+                <div class="keyboard-btn keyboard-btn-letter">e</div>
+                <div class="keyboard-btn keyboard-btn-letter">r</div>
+                <div class="keyboard-btn keyboard-btn-letter">t</div>
+                <div class="keyboard-btn keyboard-btn-letter">y</div>
+                <div class="keyboard-btn keyboard-btn-letter">u</div>
+                <div class="keyboard-btn keyboard-btn-letter">i</div>
+                <div class="keyboard-btn keyboard-btn-letter">o</div>
+                <div class="keyboard-btn keyboard-btn-letter">p</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-btn keyboard-btn-letter">a</div>
+                <div class="keyboard-btn keyboard-btn-letter">s</div>
+                <div class="keyboard-btn keyboard-btn-letter">d</div>
+                <div class="keyboard-btn keyboard-btn-letter">f</div>
+                <div class="keyboard-btn keyboard-btn-letter">g</div>
+                <div class="keyboard-btn keyboard-btn-letter">h</div>
+                <div class="keyboard-btn keyboard-btn-letter">j</div>
+                <div class="keyboard-btn keyboard-btn-letter">k</div>
+                <div class="keyboard-btn keyboard-btn-letter">l</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-btn keyboard-btn-backspace">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" width="26" height="26">
+                        <path fill-rule="evenodd" fill="none" d="m-2-5h24v24h-24z" />
+                        <path fill-rule="evenodd" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 1q0.2 0 0.4 0.1 0.2 0.1 0.3 0.2 0.1 0.1 0.2 0.3 0.1 0.2 0.1 0.4v10q0 0.2-0.1 0.4-0.1 0.2-0.2 0.3-0.1 0.1-0.3 0.2-0.2 0.1-0.4 0.1h-11l-5-5q-0.2-0.2-0.3-0.5-0.1-0.2-0.1-0.5 0-0.3 0.1-0.5 0.1-0.3 0.3-0.5l5-5z" />
+                        <path fill-rule="evenodd" fill="none" stroke="#000" stroke-linecap="rounrd" stroke-linejoin="round" stroke-width="2" d="m14 5l-4 4m0-4l4 4" />
+                    </svg>
+                </div>
+                <div class="keyboard-btn keyboard-btn-letter">z</div>
+                <div class="keyboard-btn keyboard-btn-letter">x</div>
+                <div class="keyboard-btn keyboard-btn-letter">c</div>
+                <div class="keyboard-btn keyboard-btn-letter">v</div>
+                <div class="keyboard-btn keyboard-btn-letter">b</div>
+                <div class="keyboard-btn keyboard-btn-letter">n</div>
+                <div class="keyboard-btn keyboard-btn-letter">m</div>
+                <div class="keyboard-btn keyboard-btn-enter">Enter</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
