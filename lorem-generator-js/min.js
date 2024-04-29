@@ -69,3 +69,9 @@ generateBtn.addEventListener("click", function () {
     }
   }
 });
+
+AddHtmlTag.addEventListener("change", function () {
+  AddHtmlTag.value == "No"
+    ? tagsInput.setAttribute("disabled", "true")
+    : tagsInput.removeAttribute("disabled", "true");
+});
