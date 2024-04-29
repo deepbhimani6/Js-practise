@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.pagination-section {
+  padding: 48px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.pagination a {
+  color: #007bff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  margin: 0 5px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 -10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-container a {
+  width: 25%;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  height: 100%;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+h1 {
+  text-align: center;
+  margin: 32px;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+#page-counters {
+  display: inline-block;
+}
+
+#page-numbers {
+  margin-top: 20px;
+  font-size: 16px;
+}
