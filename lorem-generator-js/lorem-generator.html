@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Lorem Ipsum Generator</h1>
+    </header>
+    <main>
+        <div class="options">
+            <div class="paragraphs">
+                <div class="flex items-center gap-2.5 mb-2.5">
+                    <label for="paragraphs" class="mb-0">Paragraphs:</label>
+                    <span id="paragraphsValue">1</span>
+                </div>
+                <input type="range" id="paragraphs" min="1" max="50" value="1">
+            </div>
+            <div class="words">
+                <div class="flex items-center gap-2.5 mb-2.5">
+                    <label for="words" class="mb-0">Words per Paragraph:</label>
+                    <span id="wordsValue">10</span>
+                </div>
+                <input type="range" id="words" min="1" max="100" value="10">
+            </div>
+            <div class="tags">
+                <label for="tags" class="mb-2.5">Tag:</label>
+                <select id="tags"></select>
+            </div>
+            <div class="include">
+                <label for="include" class="mb-2.5">Include HTML:</label>
+                <select id="include">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <button id="generate">Generate Lorem Ipsum</button>
+        </div>
+
+        <div class="output"></div>
+    </main>
+
+    <script src="min.js"></script>
+</body>
+
+</html>
