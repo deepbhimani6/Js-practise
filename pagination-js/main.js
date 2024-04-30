@@ -20,7 +20,6 @@ for (let i = 0; i < totalPage; i++) {
 }
 
 let pageLinks = document.querySelectorAll(".page-link");
-
 let cardContainerWidth = cardContainer.getBoundingClientRect().width;
 
 function changePage() {
@@ -59,26 +58,44 @@ updatePagination();
 prevButton.addEventListener("click", () => {
   if (currentPage > 1) {
     currentPage--;
-    // displayPage();
     changePage();
     updatePagination();
+    btnDisabled();
   }
 });
 
 nextButton.addEventListener("click", () => {
   if (currentPage < totalPage) {
     currentPage++;
-    // displayPage();
     changePage();
     updatePagination();
+    btnDisabled();
   }
 });
 
 pageLinks.forEach((pageLink) => {
   pageLink.addEventListener("click", () => {
     currentPage = pageLink.textContent;
-    // displayPage();
     changePage();
     updatePagination();
+    btnDisabled();
   });
 });
+
+function btnDisabled() {
+  if (currentPage == totalPage) {
+    nextButton.style.pointerEvents = "none";
+    nextButton.style.opacity = "50%";
+  } else {
+    nextButton.style.pointerEvents = "";
+    nextButton.style.opacity = "";
+  }
+  if (currentPage == 1) {
+    prevButton.style.pointerEvents = "none";
+    prevButton.style.opacity = "50%";
+  } else {
+    prevButton.style.pointerEvents = "";
+    prevButton.style.opacity = "";
+  }
+}
+btnDisabled();
