@@ -11,8 +11,10 @@ let hour = 0;
 let timer = false;
 
 startTimer.addEventListener("click", () => {
-  timer = true;
-  stopWatch();
+  if (timer != true) {
+    timer = true;
+    stopWatch();
+  }
 });
 
 stopTimer.addEventListener("click", () => {
